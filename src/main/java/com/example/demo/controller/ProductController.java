@@ -10,6 +10,7 @@ public class ProductController {
     @GetMapping("/products/{productId}")
     public Product getProduct(@PathVariable int productId) {
 //        new feature
+        // new fix
         return new Product(productId, productId + " name");
     }
 }
