@@ -51,6 +51,6 @@ jobs:
 
       - name: SonarQube Scan
         env:
-          SONAR_HOST_URL: 'http://localhost:9001'
+          SONAR_HOST_URL: 'http://localhost:9001' #
           SONAR_TOKEN: 'sqp_59fab372690e4c32e6c755d3dd5e324ade242e64'
         run: mvn sonar:sonar
