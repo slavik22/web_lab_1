@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class ProductController {
     @GetMapping("/products/{productId}")
     public Product getProduct(@PathVariable int productId) {
-//        new feature
         return new Product(productId, productId + " name");
     }
 }
